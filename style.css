@@ -1,22 +1,39 @@
 /*arrangement. Conatainers first? */
 /*write code clearly so img doesnt have to appear many times */
+body {
+  background-color: rgb(89, 89, 102);
+}
+
+.brand {
+  font-size: 30px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: 1000;
+  text-decoration:underline;
+  text-transform: uppercase;
+  text-shadow: 4px 4px 5px rgb(88, 81, 81);
+  line-height: 2;
+  letter-spacing: 3px;
+  ;
+}
+
 .box {
   font-size: 20px;
-  color: white;
+  /*color: white;*/
   padding: 10px;
   text-align:center;
   font-family: 'Courier New', Courier, monospace;
   font-weight: 100;
   box-sizing: border-box;
-  width: 300px;
+  width: 400px;
 }
 
 .box-1 {
-  background: #e51400; 
+  /*background: #e51400;*/
   flex-grow: 1;
   display: flex;
-  align-items: center;
-  justify-content: center; 
+  /*align-items: center;
+  justify-content: center; */
+  align-self: center;
 }
 
 .box-1 ul {
@@ -24,7 +41,7 @@
 }
 
 .box-2 {
-  background: #fa6800;
+  /*background: #fa6800;*/
 }
 .box-2 img {
   width: 100%;
@@ -33,17 +50,22 @@
 }
 
 .box-3 {
-  background: #f0a30a; 
+  /*background: #f0a30a;*/
 }
+
 .box-3 img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.box-4 {background: #e3c800; }
+.box-4 {
+  /*background: #e3c800; */
+}
 
-.box-5 {background: #a4c400;}
+.box-5 {
+  /*background: #a4c400;*/
+}
 
 .box-5 img {
   width: 100%;
@@ -51,9 +73,15 @@
   object-fit: cover;
 }
 
-.box-6 {background: #a9e450;}
+.box-6 {
+  /*background: #a9e450;*/
+  align-self: flex-end;
+}
 
-.box-7 {background: #900c3f;}
+.box-7 {
+  /*background: #900c3f;
+  flex-basis: 600px;*/
+}
 
 .box-7 img {
   width: 100%;
@@ -61,7 +89,10 @@
   object-fit: cover;
 }
 
-.box-8 {background: #ff5733;}
+.box-8 {
+  /*background: #ff5733;*/
+  flex-basis: 600px;
+}
 
 .box-8 img {
   width: 100%;
@@ -70,13 +101,14 @@
 }
 
 /*  LAYOUT STYLES */
-.container {
+.container, .container2, .container3 {
   display: flex;
-  border: 8px solid black;
+  /*border: 8px solid black;*/
   height: 80vh;  
+  justify-content: space-between;
 }
 
-.container2 {
+/*.container2 {
   display: flex;
   border: 8px solid black;
   height: 80vh;  
@@ -88,5 +120,4 @@
   border: 8px solid black;
   height: 80vh;  
   justify-content: space-around;
-  aligh-items: space-around;
-}
+}*/
